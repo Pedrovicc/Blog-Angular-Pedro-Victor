@@ -6,10 +6,15 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./small-card.component.css']
 })
 export class SmallCardComponent implements OnInit {
+
   @Input()
   photoCover: string = ""
+
   @Input()
-  cardTitle: string = "NOVA SERIE ANUNCIADA"
+  cardTitle: string = ""
+
+  @Input()
+  Id: string = "0"
 
   constructor() { }
 
